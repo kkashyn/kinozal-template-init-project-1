@@ -1,2 +1,3 @@
-# kinozal-template-init-project
+# Kinozal template
  
+Bootstrap 3 project
