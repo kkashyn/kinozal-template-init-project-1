@@ -97,6 +97,33 @@ a:hover, a:focus {
   color: #df8a13;
 }
 
+h1 {
+  margin: -7.5px 0 45px;
+  font-family: "PT Serif", serif;
+}
+@media (min-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 575.8px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+h1::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
 .header {
   margin-bottom: 15px;
 }
@@ -147,6 +174,22 @@ a:hover, a:focus {
 .new-films-item {
   padding-right: 7.5px;
   padding-left: 7.5px;
+}
+
+.film_page {
+  font-size: 1.2em;
+}
+.film_page_badge {
+  font-size: 0.8em;
+}
+.film_page_short_info:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
 }
 
 .left-sidebar {

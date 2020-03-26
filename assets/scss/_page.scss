@@ -1,0 +1,20 @@
+.film_page {
+    font-size: 1.2em;
+
+    &_badge {
+        font-size: 0.8em;
+    }
+
+    &_short_info {
+
+        &:not(:last-of-type) {
+            margin-right: $gap;
+        }
+    }
+}
+
+.embed-responsive {
+    border: 1px solid $color-gray;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+}
