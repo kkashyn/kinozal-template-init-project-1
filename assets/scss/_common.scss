@@ -20,14 +20,15 @@ a {
 h1 {
     margin: (-$gap / 2) 0 ($gap * 3);
     font-family: $font-header;
+    font-size: 3rem;
 
-    @include xs-min {
-        font-size: 3rem;
-    }
+    // @include xs-min {
+    //     font-size: 3rem;
+    // }
 
-    @include xs {
-        font-size: 2rem;
-    }
+    // @include xs {
+    //     font-size: 2rem;
+    // }
 
     &::after {
         position: absolute;
@@ -38,7 +39,28 @@ h1 {
     }
 }
 
-h2 {}
+h2 {
+    font-family: $font-header;
+    margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
+    font-size: 2.5rem;
+
+    &::before {
+        position: absolute;
+        width: 30px;
+        margin: 0.25em 0 0 0;
+        border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+        content: "";
+        left: 0;
+    }
+
+    &::after {
+        position: absolute;
+        width: 100%;
+        margin: 0.85em 0 0 $gap;
+        border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+        content: "";
+    }
+}
 
 h3 {}
 

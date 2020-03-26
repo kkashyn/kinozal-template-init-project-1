@@ -94,3 +94,7 @@
         font-size: 0.875rem;
     }
 }
+
+.well {
+    @extend %form-background-color;
+}
