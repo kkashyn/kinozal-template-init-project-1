@@ -192,13 +192,13 @@ section {
   padding-left: 7.5px;
 }
 
-.film_page {
+.film-page {
   font-size: 1.2em;
 }
-.film_page_badge {
+.film-page_badge {
   font-size: 0.8em;
 }
-.film_page_short_info:not(:last-of-type) {
+.film-page_short_info:not(:last-of-type) {
   margin-right: 15px;
 }
 
@@ -206,6 +206,10 @@ section {
   border: 1px solid #dddddd;
   border-bottom: none;
   border-radius: 4px 4px 0 0;
+}
+
+.film-comment-button {
+  float: right;
 }
 
 .left-sidebar {

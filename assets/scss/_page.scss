@@ -1,4 +1,4 @@
-.film_page {
+.film-page {
     font-size: 1.2em;
 
     &_badge {
@@ -17,4 +17,8 @@
     border: 1px solid $color-gray;
     border-bottom: none;
     border-radius: 4px 4px 0 0;
+}
+
+.film-comment-button {
+    float: right;
 }
