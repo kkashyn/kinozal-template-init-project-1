@@ -18,7 +18,7 @@ a {
 }
 
 h1 {
-  margin: (-$gap / 2) 0 ($gap * 3);
+  margin: (-$gap / 2.5) 0 ($gap * 3);
   font-family: $font-header;
 
   @include xs-min {
