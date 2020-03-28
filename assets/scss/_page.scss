@@ -6,7 +6,7 @@
     }
 
     &_short_info {
-
+        white-space: nowrap;
         &:not(:last-of-type) {
             margin-right: $gap;
         }
