@@ -1,11 +1,10 @@
 .navbar-inverse {
-    background-color: darken($color-dark, 4%);
     border-color: transparent;
+    background-color: darken($color-dark, 4%);
 
     .navbar-nav {
         >.active>a {
             background-color: saturate(darken($color-primary, 14%), 15%);
-            //#053159
 
             &:hover,
             &:focus {
@@ -13,18 +12,22 @@
             }
         }
 
-        >li>a {
-            @include sm-min {
-                border-radius: 4px;
-            }
+        >li {
+            >a {
+                transition: background-color 0.5s;
 
-            @include sm {
-                text-align: center;
-            }
+                @include sm-min {
+                    border-radius: 4px;
+                }
 
-            &:hover,
-            &:focus {
-                background-color: $color-primary;
+                @include sm {
+                    text-align: center;
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: $color-primary;
+                }
             }
         }
     }
@@ -44,8 +47,8 @@
         margin-bottom: 0;
     }
 
-    @include sm-min {
-        li {
+    li {
+        @include sm-min {
             margin: 5px 5px 5px 0;
         }
     }
@@ -56,29 +59,29 @@
         margin-top: 0;
     }
 
-    @include sm-min {
-        li {
+    li {
+        @include sm-min {
             margin: 5px 0 5px 5px;
         }
     }
 }
 
 .panel {
-    background-color: lighten($color-gray, 8%);
+    margin-bottom: $gap * 2;
     border: none;
-    margin-bottom: ($gap * 2);
+    background-color: lighten($color-gray, 8%);
 
     &-info {
         >.panel-heading {
             color: $color-light;
-            background-color: $color-accent;
             border: none;
+            background-color: $color-accent;
         }
     }
 
     &-title {
-        font-size: 1.2rem;
         letter-spacing: 0.1em;
+        font-size: 1.2rem;
     }
 
     &-body {
@@ -97,4 +100,10 @@
 
 .well {
     @extend %form-background-color;
+    // border-color: $color-gray;
+    // background-color: lighten($color-gray, 8%);
+}
+
+.embed-responsive {
+    border-radius: 4px 4px 0 0;
 }

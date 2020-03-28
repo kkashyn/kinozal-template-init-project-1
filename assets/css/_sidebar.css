@@ -1,0 +1,11 @@
+.verical-slider {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.verical-slider img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=_sidebar.css.map */
